@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  imlbd_jupyterlab:
+    image: imlbd_jupyterlab
+    build: 
+      context: ./jupyter-lab
+      extra_hosts: 
+        - "nameserver:8.8.8.8"
+    ports:
+      - "8895:8888" # jupyter tensor flow
+    volumes:
+      - "./notebook/:/home/jovyan/"

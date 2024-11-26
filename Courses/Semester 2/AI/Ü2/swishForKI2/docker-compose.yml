@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  swish-data:
+    image: ai_exercise2_data
+    build: ./dataImage
+    volumes:
+      - swish_data:/data
+
+  swishExercise2:
+    image: swipl/swish
+    ports:
+      - "13050:3050"
+    volumes:
+      - swish_data:/data
+    depends_on:
+      - swish-data
+
+volumes:
+  swish_data:
