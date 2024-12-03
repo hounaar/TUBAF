@@ -16,8 +16,8 @@ This repository includes all of my projects during my Master's degree in TUBAF u
   <li><a href="https://github.com/parsabe/TUBAF/tree/master/Courses/Semester%202/Geomodeling">Geomodeling</a></li>
   <li><a href="https://github.com/parsabe/TUBAF/tree/master/Courses/Semester%202/HPC%20-%20High%20Performance%20computing/PVL">High Performance Computing</a></li>
   <li><a href="https://github.com/parsabe/TUBAF/tree/master/Courses/Semester%202/Math%20of%20Machine%20Learning">Mathematics of Machine Learning</a></li>
-  <li><a href="https://github.com/parsabe/TUBAF/tree/master/Courses/Semester%202/Math%20of%20Machine%20Learning">Data management</a></li>
-  <li><a href="https://github.com/parsabe/TUBAF/tree/master/Courses/Semester%202/Math%20of%20Machine%20Learning">Scientific Computing Project</a></li>
+  <li><a href="https://github.com/parsabe/TUBAF/tree/master/Courses/Semester%202/Datenmanagement">Data management</a></li>
+  <li><a href="https://github.com/parsabe/TUBAF/tree/master/Courses/Semester%202/Scientific%20computing%20project">Scientific Computing Project</a></li>
 </ul>
 
 
