@@ -3,9 +3,10 @@
 
 This repository contains C++ and Python implementations of a program designed to compute an approximation of \(\pi\) using numerical integration and parallel computing with the Message Passing Interface (MPI). The program evaluates the integral:
 
-\[
-\int_0^1 \frac{1}{1 + x^2} dx = \frac{\pi}{4}
-\]
+$$
+\int_0^1 \frac{1}{1+x^2} \ dx = \arctan(1) - \arctan(0) = \frac{\pi}{4}
+$$
+
 
 and leverages the trapezoidal rule for numerical integration. It is part of the course assignment for *Introduction to High Performance Computing and Optimization*.
 
@@ -13,7 +14,7 @@ and leverages the trapezoidal rule for numerical integration. It is part of the 
 
 ## **Description**
 
-The program computes the integral \(\int_0^1 \frac{1}{1+x^2} dx\) using the trapezoidal rule and multiplies the result by 4 to approximate \(\pi\). The computation is parallelized using MPI, where each process computes a portion of the integral, and the results are combined using `MPI_Reduce`.
+The program computes the integral using the trapezoidal rule and multiplies the result by 4 to approximate π. The computation is parallelized using MPI, where each process computes a portion of the integral, and the results are combined using `MPI_Reduce`.
 
 Key features:
 - C++ implementation using `MPI` for parallelization.
@@ -70,7 +71,7 @@ mpirun -np <number_of_processes> python pi_calculation.py
 ## **Output**
 
 Upon successful execution, the program displays:
-1. **Computed \(\pi\)**: The approximated value of \(\pi\) to 7 decimal places.
+1. **Computed π**: The approximated value of \(\pi\) to 7 decimal places.
 2. **Execution Time**: The time taken for the computation.
 
 Example output:
@@ -99,7 +100,7 @@ The results demonstrate the efficiency of parallel computation. Execution time d
 
 ## **Conclusion**
 
-This project demonstrates the effectiveness of MPI for parallelizing numerical computations. By applying the trapezoidal rule, the integral \(\int_0^1 \frac{1}{1+x^2} dx = \frac{\pi}{4}\) is computed accurately to 7 decimal places. The implementation showcases the synergy between mathematical techniques and high-performance computing, achieving substantial speedups while maintaining precision.
+This project demonstrates the effectiveness of MPI for parallelizing numerical computations. By applying the trapezoidal rule, the integral is computed accurately to 7 decimal places. The implementation showcases the synergy between mathematical techniques and high-performance computing, achieving substantial speedups while maintaining precision.
 
 ---
 
