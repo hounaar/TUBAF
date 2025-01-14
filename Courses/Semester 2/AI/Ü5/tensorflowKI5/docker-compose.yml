@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  tensorflow:
+    image: tensorflow/tensorflow
+    ports:
+      - "8891:8888" # jupyter tensor flow
+    volumes:
+      - "./notebook/:/notebooks/mount"
+    environment:
+      - PASSWORD=42
