@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  tensorflow:
+    image: jupyter/tensorflow-notebook
+    ports:
+      - "8891:8888" # jupyter tensor flow
+    volumes:
+      - "./notebook/:/home/jovyan/"
+    environment:
+      - PASSWORD=42
