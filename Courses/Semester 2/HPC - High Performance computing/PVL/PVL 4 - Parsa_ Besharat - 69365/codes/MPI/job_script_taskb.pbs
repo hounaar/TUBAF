@@ -1,0 +1,15 @@
+
+#!/bin/bash
+#PBS -N game_of_life_task_b
+#PBS -q teachingq
+#PBS -l select=1:ncpus=4:mpiprocs=4
+#PBS -l walltime=00:15:00
+#PBS -o log_task_b.out
+#PBS -e log_task_b.err
+
+cd /home/pb70gygu/task4/mpi
+
+module load mpi
+
+mpirun -np 4 ./game_of_life_mpi 4000 10 0.5 > output_task_b_4000.txt
+mpirun -np 4 ./game_of_life_mpi 8000 10 0.5 > output_task_b_8000.txt

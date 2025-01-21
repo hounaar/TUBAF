@@ -1,0 +1,19 @@
+#!/bin/bash
+#PBS -N game_of_life_serial
+#PBS -q teachingq
+#PBS -l select=1:ncpus=1
+#PBS -l walltime=00:10:00
+#PBS -o log_serial.out
+#PBS -e log_serial.err
+
+cd /home/pb70gygu/task4/serial
+
+
+echo "Job started on $(hostname) at $(date)"
+
+./game_of_life 1000 10 0.5 > output_1000.txt
+./game_of_life 2000 10 0.5 > output_2000.txt
+./game_of_life 4000 10 0.5 > output_4000.txt
+./game_of_life 8000 10 0.5 > output_8000.txt
+
+echo "Job completed at $(date)"

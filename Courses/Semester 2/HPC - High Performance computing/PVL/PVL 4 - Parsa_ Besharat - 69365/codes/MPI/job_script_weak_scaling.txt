@@ -1,0 +1,16 @@
+
+#!/bin/bash
+#PBS -N game_of_life_weak_scaling
+#PBS -q teachingq
+#PBS -l select=1:ncpus=8:mpiprocs=8
+#PBS -l walltime=00:20:00
+#PBS -o log_weak_scaling.out
+#PBS -e log_weak_scaling.err
+
+cd /home/pb70gygu/task4/mpi
+
+module load mpi
+
+mpirun -np 2 ./game_of_life_mpi 2000 10 0.5 > weak_scaling_2.txt
+mpirun -np 4 ./game_of_life_mpi 4000 10 0.5 > weak_scaling_4.txt
+mpirun -np 8 ./game_of_life_mpi 8000 10 0.5 > weak_scaling_8.txt

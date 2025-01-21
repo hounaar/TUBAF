@@ -1,0 +1,2 @@
+Game of Life with N = 2000, 10 timesteps and initial probability = 0.5
+Computation took: 0.202143 seconds.
